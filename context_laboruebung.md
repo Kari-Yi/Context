@@ -159,3 +159,10 @@ Verwenden Sie dann Prompt-Verkettung: Geben Sie den Prompt an eine andere KI wei
 Dokumentieren Sie die Ausgaben mittels Screenshots.
 
 ## Reflexion
+
+1. Welche Arbeiten könnte Ihnen MCP in Zukunft abnehmen?
+2. Würden Sie MCP in Zukunft selbst verwenden, wieso bzw. wieso nicht?
+
+
+---
+*Viel Erfolg! ;\)*
