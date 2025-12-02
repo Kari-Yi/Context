@@ -1,8 +1,9 @@
 # Ziele der Laborübung
 
 - Grundverständnis: Was sind Blender und UV? Wie funktioniert MCP?
-- Wie man den Kommunikationstunnel zwischen Client und Server aufstellt.
 - Wie man über Prompts einfache 3D-Objekte erstellt und verändert.
+- Automatische Generierung eines Bilds in Blender, z. B.:
+![Beispielrender eines Weihnachtsmarkts](images/render-weihnachtsmarkt.png)
 
 # Erklärung der benutzten Technologie
 
@@ -10,8 +11,6 @@
 
 Blender ist ein freies, quelloffenes 3D-Produktionswerkzeug, mit dem sich Animationen, Modelle, Simulationen und visuelle Effekte erstellen lassen. Die Vorteile von Blender gegenüber proprietären Lösungen liegen vor allem in der offenen Erweiterbarkeit, der aktiven Community sowie der breiten Plattformunterstützung (Linux, Windows, macOS).  
 Die Software integriert zahlreiche Funktionen – von Modellierung, Texturierung und Rigging über Compositing bis hin zu Video-Editing – und besitzt eine leistungsfähige Python-Schnittstelle, über die externe Systeme (wie KI-Modelle) direkt mit Blender interagieren können.
-
-![alt text](render1.png "Title")
 
 ## MCP (Model Context Protocol)
 
