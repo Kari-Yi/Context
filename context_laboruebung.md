@@ -5,7 +5,7 @@
 - Automatische Generierung eines Bilds in Blender, z. B.:
 ![Beispielrender eines Weihnachtsmarkts](images/render-weihnachtsmarkt.png)
 
-# Erklärung der benutzten Technologie
+# Erklärung der benutzten Technologien
 
 ## Blender
 
@@ -165,4 +165,5 @@ Dokumentieren Sie die Ausgaben mittels Screenshots.
 
 
 ---
+
 *Viel Erfolg! ;\)*
