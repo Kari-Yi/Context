@@ -23,14 +23,14 @@ Das Projekt nutzt das Model Context Protocol (MCP), um Claude Desktop mit Blende
 ---
 
 
-## Finale Laborübung installieren
+## Finale Laborübung herunterladen
 
 ```bash
 # Word
-git clone https://github.com/[GitHub-Name]/[Repository-Name].git
+- [Word Angabe herunterladen](./ressourcen/uebungsangabe.pdf)
 
 # PDF
-cd [Repository-Name]
+- [PDF Angabe herunterladen](./ressourcen/uebungsangabe.pdf)
 
 # Markdown
 
