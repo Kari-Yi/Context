@@ -25,9 +25,9 @@ Das Projekt nutzt das Model Context Protocol (MCP), um Claude Desktop mit Blende
 
 ## Finale Laborübung herunterladen
 
-[Word Angabe herunterladen](./ressourcen/uebungsangabe.pdf)
+[Word Angabe herunterladen](./ressourcen/context_laboruebung.odt)
 
-[PDF Angabe herunterladen](./ressourcen/uebungsangabe.pdf)
+[PDF Angabe herunterladen](./ressourcen/context_laboruebung.pdf)
 
 [MD Angabe herunterladen](./context_laboruebung.md)
 
