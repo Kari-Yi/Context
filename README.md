@@ -31,3 +31,4 @@ Das Projekt nutzt das Model Context Protocol (MCP), um Claude Desktop mit Blende
 
 [MD Angabe herunterladen](./context_laboruebung.md)
 
+Dieses Repository dient ausschließlich zu Lernzwecken.
