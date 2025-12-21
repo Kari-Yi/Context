@@ -4,6 +4,19 @@
 - Wie man über Prompts einfache 3D-Objekte erstellt und verändert.
 - Automatische Generierung eines Bilds in Blender, z. B.:
 ![Beispielrender eines Weihnachtsmarkts](images/render-weihnachtsmarkt.png)
+```
+Prompt:
+Erstelle mit Blender über MCP eine stilisierte Low-Poly-3D-Szene eines winterlichen Dorfes bei Nacht.
+Wichtig: Kein Rendern, kein Screenshot, kein Export – die Szene soll nur in der 3D-Ansicht aufgebaut werden.
+
+Stil: Low-Poly mit wenigen Polygonen, klaren geometrischen Grundformen, einfarbigen Materialien und ohne Texturen.
+
+Szene: In der Mitte steht ein Weihnachtsbaum aus mehreren gestapelten Kegeln in dunklem Grün, oben ein leuchtender Stern oder eine Kugel mit Emission sowie ein schwaches Point Light. Um den Baum herum befinden sich 5–8 Hütten (Würfelbasis, Kegeldach, braune Farbtöne), 3–5 Marktstände mit einfachen Formen und kleinen farbigen Würfeln als Geschenke sowie 4–6 Laternen aus Zylindern und Würfeln mit warmem orangefarbenem Point Light. Der Boden ist eine große, leicht bläulich-weiße Plane als Schnee, ergänzt durch leichten Schneefall über ein Particle System mit kleinen weißen Partikeln.
+
+Umgebung: Dezente Grundbeleuchtung mit weichen Schatten, warmes Licht bei Laternen, Kamera leicht erhöht und schräg auf die Szene gerichtet, dunkelblauer Nachthimmel mit ruhiger winterlicher Atmosphäre.
+
+Technik: Verwende ausschließlich bpy-Python-Befehle, nur primitive Meshes (Cube, Cone, Cylinder, Sphere), geringe Polygonanzahl und klar strukturierte Funktionen (z. B. create_tree(), create_house(), create_lamp()).
+```
 
 # Erklärung der benutzten Technologien
 
@@ -50,6 +63,7 @@ Die grundlegenden Schritte sind wie folgt:
 
 6. **Folgeaktionen**  
    Basierend auf den Ergebnissen kann der Client weitere Operationen durchführen, etwa Materialien ändern, Szeneneinstellungen anpassen oder komplexe Automationen orchestrieren.
+![Erklärung der Kommunikation zwischen MCP-Client und Server](images/explanation-mcp.png)
 
 # Installation der benötigten Ressourcen
 
@@ -58,7 +72,11 @@ Die grundlegenden Schritte sind wie folgt:
 ### Installation von Blender
 
 Auf dem Schulrechner ist Blender bereits installiert. \
-Sollten Sie die Übung auf Ihrem privaten Gerät durchführen und Blender noch nicht installiert haben, können sie dies über die Blender [Homepage](https://www.blender.org/download/ "abgerufen am 2025-11-25") tun.
+Sollten Sie die Übung auf Ihrem privaten Gerät durchführen und Blender noch nicht installiert haben, können sie dies entweder über die Blender [Homepage](https://www.blender.org/download/ "abgerufen am 2025-11-25") tun, oder mit winget:
+```ps1
+winget install BlenderFoundation.Blender
+```
+
 
 ### Installation von uv
 
@@ -109,7 +127,10 @@ $env:Path = "C:\Users\DEIN_USER\.local\bin;$env:Path"
 
 ### Claude Desktop Installation
 
-Installieren Sie Claude Desktop über die [Homepage](https://www.claude.com/download "abgerufen am 2025-11-18"). \
+Installieren Sie Claude Desktop über die [Homepage](https://www.claude.com/download "abgerufen am 2025-11-18"), oder über die PowerShell:
+```ps1
+winget install Anthropic.Claude
+```
 Nach der fertigen Installation öffnen Sie Claude und bearbeiten Sie die Datei: `claude_desktop_config.json`.\
 Diese finden Sie unter: Claude → Settings → Developer → Edit Config
 
@@ -148,7 +169,7 @@ Dort befindet sich der Button **„Connect to MCP server“**. Klicken Sie auf d
 
 # Praxisphase
 
-## Ersten Tests
+## Erste Tests
 
 Öffnen Sie in Claude Desktop den Bereich „Search and Tools“ und stellen Sie sicher, dass alle Funktionen aktiviert sind.
 
