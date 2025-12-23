@@ -131,19 +131,17 @@ Installieren Sie Claude Desktop über die [Homepage](https://www.claude.com/down
 ```ps1
 winget install Anthropic.Claude
 ```
-Nach der fertigen Installation öffnen Sie Claude und bearbeiten Sie die Datei: `claude_desktop_config.json`.\
-Diese finden Sie unter: Claude → Settings → Developer → Edit Config
 
 ### Bearbeitung der Konfigurationsdatei
 
-Danach navigieren Sie zu Claude → Settings → Developer → Edit Config `claude_desktop_config.json` und fügen Sie folgende Zeilen hinzu:
+Danach navigieren Sie zu Hamburgermenü → File → Settings → Developer → Edit Config `claude_desktop_config.json` und fügen Sie folgende Zeilen hinzu:
 
 ```json
 {
   "mcpServers": {
     "blender": {
-      "command": "C:\\Users\\DEIN_USER\\.local\\bin\\uvx.exe",
-      "args": ["blender-mcp"]
+      "command": "uvx.exe",
+      "args": ["--python", "3.12", "blender-mcp"]
     }
   }
 }
@@ -159,19 +157,22 @@ Damit Blender mit Claude kommunizieren kann, braucht Blender selbst auch ein Plu
 1. Add-on herunterladen
    Laden Sie `addon.py` über diesen Link herunter: [https://github.com/ahujasid/blender-mcp/blob/main/addon.py](https://github.com/ahujasid/blender-mcp/blob/main/addon.py "abgerufen am 2025-11-25")
 2. Öffnen Sie Blender und Navigieren Sie zu Add-ons (Edit → Preferences → Add-ons)
-3. Klicken Sie auf "Install..." und wählen Sie `addon.py` aus.
-4. Aktivieren Sie das Add-on indem Sie die Checkbox neben "Interface: Blender MCP" auswählen.
+3. Drücken sie oben rechts auf den Pfeil
+4. Klicken Sie auf "Install from Disk..." und wählen Sie `addon.py` aus.
+5. Aktivieren Sie das Add-on indem Sie die Checkbox neben "Blender MCP" auswählen.
 
 ## Verbindung mit dem Server herstellen
 
-Öffnen Sie Blender und das MCP-Panel, indem Sie rechts oben im Blender-Fenster auf den kleinen Pfeil klicken. \
-Dort befindet sich der Button **„Connect to MCP server“**. Klicken Sie auf diesen → Blender verbindet sich mit Claude.
+Öffnen Sie Blender und das MCP-Panel, indem Sie rechts oben im Blender-Fenster auf den kleinen Pfeil neben dem Orbit-Gizmo (Achsenansicht) klicken. \
+Dort befindet sich im Unterpunkt **„BlenderMCP“** der Button **„Connect to MCP server“**. Klicken Sie auf diesen.
+Damit sich Claude mit dem von Blender gestarteten Server verbindet, müssen Sie Claude Desktop neu starten.
+Überprüfen Sie mithilfe des Task-Managers, ob das Programm wirklich geschlossen wurde.
 
 # Praxisphase
 
 ## Erste Tests
 
-Öffnen Sie in Claude Desktop den Bereich „Search and Tools“ und stellen Sie sicher, dass alle Funktionen aktiviert sind.
+Überprüfen Sie unten links über das Plus-Symbol, ob der Connector **„Blender“** aktiviert ist.
 
 Überlegen Sie sich einen kreativen Prompt und senden Sie ihn ab!
 
