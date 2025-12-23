@@ -5,8 +5,8 @@
 - Automatische Generierung eines Bilds in Blender, z. B.:
 ![Beispielrender eines Weihnachtsmarkts](images/render-weihnachtsmarkt.png)
 ```
-Prompt:
-Erstelle mit Blender über MCP eine stilisierte Low-Poly-3D-Szene eines winterlichen Dorfes bei Nacht.
+Prompt: Erstelle mit Blender über MCP eine stilisierte Low-Poly-3D-Szene eines winterlichen Dorfes bei Nacht.
+
 Wichtig: Kein Rendern, kein Screenshot, kein Export – die Szene soll nur in der 3D-Ansicht aufgebaut werden.
 
 Stil: Low-Poly mit wenigen Polygonen, klaren geometrischen Grundformen, einfarbigen Materialien und ohne Texturen.
