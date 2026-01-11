@@ -147,7 +147,6 @@ Danach navigieren Sie zu Hamburgermenü → File → Settings → Developer → 
 }
 ```
 
-(Ersetzen Sie DEIN_USER mit ihrem Benutzerkonto) \
 Mit dieser Konfiguration wird festgelegt, dass Claude uvx.exe mit dem Tool blender-mcp starten muss, um mit Blender zu kommunizieren.
 
 ## Installation des Blender-MCP Add-ons
@@ -164,7 +163,7 @@ Damit Blender mit Claude kommunizieren kann, braucht Blender selbst auch ein Plu
 ## Verbindung mit dem Server herstellen
 
 Öffnen Sie Blender und das MCP-Panel, indem Sie rechts oben im Blender-Fenster auf den kleinen Pfeil neben dem Orbit-Gizmo (Achsenansicht) klicken. \
-Dort befindet sich im Unterpunkt **„BlenderMCP“** der Button **„Connect to MCP server“**. Klicken Sie auf diesen.
+Dort befindet sich im Unterpunkt **„BlenderMCP“** der Button **„Connect to MCP server“**. Klicken Sie auf diesen. \
 Damit sich Claude mit dem von Blender gestarteten Server verbindet, müssen Sie Claude Desktop neu starten.
 Überprüfen Sie mithilfe des Task-Managers, ob das Programm wirklich geschlossen wurde.
 
