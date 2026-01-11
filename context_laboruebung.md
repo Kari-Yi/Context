@@ -153,12 +153,16 @@ Mit dieser Konfiguration wird festgelegt, dass Claude uvx.exe mit dem Tool blend
 
 Damit Blender mit Claude kommunizieren kann, braucht Blender selbst auch ein Plug-In.
 
-1. Add-on herunterladen
-   Laden Sie `addon.py` über diesen Link herunter: [https://github.com/ahujasid/blender-mcp/blob/main/addon.py](https://github.com/ahujasid/blender-mcp/blob/main/addon.py "abgerufen am 2025-11-25")
-2. Öffnen Sie Blender und Navigieren Sie zu Add-ons (Edit → Preferences → Add-ons)
-3. Drücken sie oben rechts auf den Pfeil
-4. Klicken Sie auf "Install from Disk..." und wählen Sie `addon.py` aus.
-5. Aktivieren Sie das Add-on indem Sie die Checkbox neben "Blender MCP" auswählen.
+1. Laden Sie die Datei `addon.py` über folgenden Link herunter: [https://github.com/ahujasid/blender-mcp/blob/main/addon.py](https://github.com/ahujasid/blender-mcp/blob/main/addon.py "abgerufen am 2025-11-25")
+   
+   Alternativ können Sie die Datei mit PowerShell herunterladen:
+   ```ps1
+   Invoke-WebRequest https://raw.githubusercontent.com/ahujasid/blender-mcp/refs/heads/main/addon.py -OutFile ~/Downloads/addon.py
+   ```
+3. Öffnen Sie Blender und Navigieren Sie zu Add-ons (Edit → Preferences → Add-ons)
+4. Drücken sie oben rechts auf den Pfeil
+5. Klicken Sie auf "Install from Disk..." und wählen Sie `addon.py` aus.
+6. Aktivieren Sie das Add-on indem Sie die Checkbox neben "Blender MCP" auswählen.
 
 ## Verbindung mit dem Server herstellen
 
@@ -188,3 +192,4 @@ Dokumentieren Sie die Ausgaben mittels Screenshots.
 ---
 
 *Viel Erfolg! ;\)*
+
